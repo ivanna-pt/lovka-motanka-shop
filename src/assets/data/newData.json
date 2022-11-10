@@ -1,0 +1,594 @@
+{
+  "products": [
+    {
+      "id": "01",
+      "productName": "Loving mother",
+      "imgUrl": "images/beregynia/beregynia_01-min.png",
+      "category": "Beregynia",
+      "price": 79,
+      "shortDesc":
+      "Doll height - 24 cm (9.45 inch). Materials: cotton, yarn, textiles, ribbons, lace, beads",
+      "description":
+      "Ethnic doll is a symbol of the Great Mother who created everything and cares for the souls of her children.",
+      "reviews": [
+        {
+          "rating": 4.7,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.5
+    },
+
+    {
+      "id": "02",
+      "productName": "Olesya",
+      "imgUrl": "images/beregynia/beregynia_02-min.jpg",
+      "category": "Beregynia",
+      "price": 119,
+      "shortDesc":
+      "Motanka doll height - 28 cm (11 inch). Made with the soul, from natural materials!",
+      "description":
+      "Rag doll - is a unique Ukrainian folk doll, a symbol of beauty and longevity, health and wealth. She will guard your home. Made in Ukraine!",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }],
+      "avgRating": 4.7
+    },
+
+    {
+      "id": "03",
+      "productName": "Grandmother and granddaughter",
+      "imgUrl": "images/beregynia/beregynia_sm_03-min.jpg",
+      "category": "Beregynia",
+      "price": 69,
+      "shortDesc":
+      "Mother height - 16 cm (6.3 inch)",
+      "description":
+      "The name \"doll motanka\" comes from the word \"wind\", ie to make a knotted doll from fabric, without using a needle and scissors. Motanka is a symbol of prosperity, goodness and hope. It served as a talisman of human destiny, and destiny cannot be pierced and cut.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+    {
+      "id": "04",
+      "productName": "Loving mother",
+      "imgUrl": "images/beregynia/beregynia_04-min.jpg",
+      "category": "Beregynia",
+      "price": 159,
+      "shortDesc":
+      "Mother height - 26 cm (10.24 inch). Daughter height - 12 cm (4.72 inch)",
+      "description":
+      "Motanka doll is a unique Ukrainian folk doll, a symbol of beauty and longevity, health and wealth. She will guard your home. Made in Ukraine!",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+
+    {
+      "id": "05",
+      "productName": "Housewife",
+      "imgUrl": "images/beregynia/beregynia_05-min.jpg",
+      "category": "Beregynia",
+      "price": 159,
+      "shortDesc":
+      "Doll height - 27 cm (10.63 inch)",
+      "description":
+      "Our knotted doll are created by myself, with love and care for details. Each doll is unique and made only once, it comes from my imagination to your home.",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+
+    {
+      "id": "06",
+      "productName": "Mistress Doll",
+      "imgUrl": "images/beregynia/beregynia_06-min.png",
+      "category": "Beregynia",
+      "price": 79,
+      "shortDesc":
+      "Doll height - 16 cm (6.3 inch)",
+      "description":
+      "Motanka doll is a unique Ukrainian folk doll, a symbol of beauty and longevity, health and wealth. She will guard your home. Made in Ukraine!",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+    {
+      "id": "07",
+      "productName": "Hope",
+      "imgUrl": "images/bride/bride_01-min.png",
+      "category": "bride",
+      "price": 99,
+      "shortDesc":
+      "Doll height - 27 cm (10.63 inch)",
+      "description":
+      "The cross on the face is a symbol of the rainbow, so it is made of multicolored threads. The face is a symbol of the sun. All vertical lines are symbols of masculinity, horizontal lines are symbols of femininity.",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+
+    {
+      "id": "08",
+      "productName": "Kateryna",
+      "imgUrl": "images/bride/bride_02-min.jpg",
+      "category": "bride",
+      "price": 79,
+      "shortDesc":
+      "Art doll height - 30 cm (11.8 inch)",
+      "description":
+      "Motanka doll - wonderful gift for yourself and your loved ones, mother, sister, daughter for a wedding, a good pregnancy and raising a child.",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+
+    {
+      "id": "09",
+      "productName": "Ulyana",
+      "imgUrl": "images/bride/bride_12-min.png",
+      "category": "bride",
+      "price": 109,
+      "shortDesc":
+      "Art doll height - 30 cm (11.8 inch)",
+      "description":
+      "In Ukrainian culture, ethnic doll are a symbol of fertility, abundance and a talisman for the family. Such dolls very often became real family heirlooms and were passed down from generation to generation.",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+
+    {
+      "id": "10",
+      "productName": "Love",
+      "imgUrl": "images/bride/bride_11-min.png",
+      "category": "bride",
+      "price": 79,
+      "shortDesc":
+      "Ethnic doll height - 24 cm (9.45 inch)",
+      "description":
+      "Ukrainians believed that the motanka was the spirit of ancestors, and the doll was able to pass on experience from generation to generation",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+
+    {
+      "id": "11",
+      "productName": "Magic flower",
+      "imgUrl": "images/bride/bride_05-min.png",
+      "category": "bride",
+      "price": 79,
+      "shortDesc":
+      "Art doll height - 25 cm (9.45 inch)",
+      "description":
+      "A protection talisman wonderful gift for yourself and your loved ones, mother, sister, daughter for a wedding, a good pregnancy and raising a child.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+    {
+      "id": "12",
+      "productName": "Soul flower",
+      "imgUrl": "images/bride/bride_06-min.png",
+      "category": "bride",
+      "price": 69,
+      "shortDesc":
+      "Doll height - 25 cm (9.84 inch)",
+      "description":
+      "Ukrainian doll-motanka is a symbol of Ukraine, the best gift for mom, sister, girlfriend or friends.",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "text": "Absolutely true to the photos!! I cannot believe how beautiful!! Every one compliments me on the details and quality!!"
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.7
+    },
+    {
+      "id": "13",
+      "productName": "Chornobaivka",
+      "imgUrl": "images/bride/bride_lg_14-min.png",
+      "category": "bride",
+      "price": 799,
+      "shortDesc":
+      "Art doll height - 30 cm (11.8 inch) cm (9.84 inch)",
+      "description":
+      "The custodians are all items of clothing: the skirt symbolizes the earth; the shirt represents three dimensions of time - past, present and future; beads - symbolize wealth; headdress - symbolizes the connection with the sky.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "I bought 2 Motanka from the artist. They are equally gorgeous so much so that I couldn’t decide which one to keep and which one to gift to my friend. She also is extremely happy with her Motanka!"
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "14",
+      "productName": "Bavovna",
+      "imgUrl": "images/bride/bride_07-min.jpg",
+      "category": "bride",
+      "price": 149,
+      "shortDesc":
+      "Folk doll height - 28 cm (11.02 inch)",
+      "description":
+      "Motanka doll is a symbol of good and prosperity, a symbol of hope for the best and a strong sacred thing. This doll will be a great gift and bring positive energy into the house.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "15",
+      "productName": "Kseniya",
+      "imgUrl": "images/bride/bride_sm_13-min.png",
+      "category": "bride",
+      "price": 69,
+      "shortDesc":
+      "Doll height - 16 cm (6.3 inch)",
+      "description":
+      "Motanka is a symbol of prosperity, goodness and hope. It served as a talisman of human destiny, and destiny cannot be pierced and cut",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "16",
+      "productName": "Melania",
+      "imgUrl": "images/bride/bride_08-min.jpg",
+      "category": "bride",
+      "price": 89,
+      "shortDesc":
+      "Art doll height - 26 cm (10.24 inch)",
+      "description":
+      "In Ukrainian culture, motanka doll are a symbol of fertility, abundance and a protection talisman for the family. Such dolls very often became real family heirlooms and were passed down from generation to generation.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "17",
+      "productName": "Independent",
+      "imgUrl": "images/ukraine/ukaine_01-min.jpg",
+      "category": "ukraine",
+      "price": 99,
+      "shortDesc":
+      "Art doll height - 26 cm (10.2 inch)",
+      "description":
+      "This souvenir will protect and decorate every home! This is a wonderful friend-guard",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "18",
+      "productName": "Flourishing Ukraine",
+      "imgUrl": "images/ukraine/ukaine_03-min.jpg",
+      "category": "ukraine",
+      "price": 119,
+      "shortDesc":
+      "Rag doll height - 24 cm (9.45 inch). ",
+      "description":
+      "The name \"Motanka doll\" comes from the word \"wind\", ie to make a knotted doll from fabric, without using a needle and scissors. Motanka is a symbol of prosperity, goodness and hope. It served as a talisman of human destiny, and destiny cannot be pierced and cut.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "19",
+      "productName": "MyroSlava",
+      "imgUrl": "images/ukraine/ukaine_04-min.png",
+      "category": "ukraine",
+      "price": 109,
+      "shortDesc":
+      "Rag doll height - 24 cm (9.45 inch)",
+      "description":
+      "The cross on the face is a symbol of the rainbow, so it is made of multicolored threads. The face is a symbol of the sun. All vertical lines are symbols of masculinity, horizontal lines are symbols of femininity.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "20",
+      "productName": "Blooming Ukraine",
+      "imgUrl": "images/ukraine/ukaine_05-min.jpg",
+      "category": "ukraine",
+      "price": 119,
+      "shortDesc":
+      "Doll height - 26 cm (10.24 inch)",
+      "description":
+      "Ukrainian doll-motanka is a symbol of Ukraine, the best gift for mom, sister, girlfriend or friends.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "21",
+      "productName": "Free Ukraine",
+      "imgUrl": "images/ukraine/ukaine_06-min.png",
+      "category": "ukraine",
+      "price": 99,
+      "shortDesc":
+      "Doll height - 26 cm (10.24 inch)",
+      "description":
+      "Motanka is a unique Ukrainian🇺🇦 folk doll, a symbol of beauty and longevity, health and wealth. She will guard your home. Made in Ukraine!",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "22",
+      "productName": "Ukrainian Girl Doll",
+      "imgUrl": "images/ukraine/ukaine_07-min.png",
+      "category": "ukraine",
+      "price": 99,
+      "shortDesc":
+      "Art doll height - 26 cm (10.2 inch)",
+      "description":
+      "In Ukrainian culture, motanks are a symbol of fertility, abundance and a talisman for the family. Such dolls very often became real family heirlooms and were passed down from generation to generation.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "23",
+      "productName": "Radoslavа",
+      "imgUrl": "images/ukraine/ukaine_lg_08-min.png",
+      "category": "ukraine",
+      "price": 127,
+      "shortDesc":
+      "Doll height - 31 cm (12.2 inch)",
+      "description":
+      "In Ukrainian culture, motanks are a symbol of fertility, abundance and a talisman for the family. Such dolls very often became real family heirlooms and were passed down from generation to generation.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    },
+
+    {
+      "id": "24",
+      "productName": "Peace and Glory",
+      "imgUrl": "images/ukraine/ukaine_lg_09-min.png",
+      "category": "ukraine",
+      "price": 99,
+      "shortDesc":
+      "Art doll height - 26 cm (10.2 inch)",
+      "description":
+      "In Ukrainian culture, motanks are a symbol of fertility, abundance and a talisman for the family. Such dolls very often became real family heirlooms and were passed down from generation to generation.",
+      "reviews": [
+        {
+          "rating": 4.8,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "rating": 4.9,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      ],
+      "avgRating": 4.8
+    }
+  ],
+  "serviceData": [
+    {
+      "icon": "ri-truck-line",
+      "title": "Free Shipping",
+      "subtitle": "Lorem ipsum dolor sit amet.",
+      "bg": "#fdefe6"
+    },
+    {
+      "icon": "ri-refresh-line",
+      "title": "Easy Returns",
+      "subtitle": "Lorem ipsum dolor sit amet.",
+      "bg": "#F5E8E5"
+    },
+    {
+      "icon": "ri-secure-payment-line",
+      "title": "Secure Payment",
+      "subtitle": "Lorem ipsum dolor sit amet.",
+      "bg": "#DFE0DF"
+    },
+    {
+      "icon": "ri-exchange-dollar-line",
+      "title": " Back Guarantee",
+      "subtitle": "Lorem ipsum dolor sit amet.",
+      "bg": "#FFF6E8"
+    }
+  ],
+  "carouselItems": [
+    {
+      "title": "Motanka Dolls",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!",
+      "image": "images/display-images/carousel_01.png"
+    },
+    {
+      "title": "Authentic Handcraft",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!",
+      "image": "images/display-images/carousel_02.png"
+    },
+    {
+      "title": "Ukrainian Souvenirs",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!",
+      "image": "images/display-images/carousel_03.png"
+    },
+    {
+      "title": "Perfect Gift",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!",
+      "image": "images/display-images/carousel_04.png"
+    }
+  ]
+}

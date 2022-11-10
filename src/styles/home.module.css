@@ -1,0 +1,5 @@
+.hero__section{
+    /*background-color: var(--hero-bg);*/
+    background-image: url("../assets/images/background-images/bg_linen.jpg");
+    background-size: cover;
+}

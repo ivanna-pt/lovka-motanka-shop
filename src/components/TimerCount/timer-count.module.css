@@ -1,0 +1,28 @@
+.timer__count{
+    padding: 60px 0 1.5rem 0;
+    height: 400px;
+    background-image: url("/src/assets/images/background-images/bg_timer-count.jpg");
+
+}
+
+.timer__content{
+    padding: 2rem 0;
+    color: #ffffff;
+}
+
+.timer__content h3, h4{
+    margin-bottom: 1.5rem;
+}
+
+.timer__content button{
+    margin-top: 1.5rem;
+}
+
+.timer__img{
+    height: 100%;
+    background-image: url("/src/assets/images/display-images/offer_set.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
