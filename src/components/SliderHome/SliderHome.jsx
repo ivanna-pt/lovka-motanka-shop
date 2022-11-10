@@ -3,16 +3,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import classes from "./carousel.module.css";
-import {Button, Col, Container, Row} from "reactstrap";
-
-import {Link} from "react-router-dom";
-
-import {motion} from "framer-motion";
-
 import image01 from '../../assets/images/display-images/carousel_01.png';
 import image02 from '../../assets/images/display-images/carousel_02.png';
 import image03 from '../../assets/images/display-images/carousel_03.jpg';
 import image04 from '../../assets/images/display-images/carousel_04.png';
+import usePageData from "../../custom-hooks/usePageData";
+import SliderItem from "./SliderItem";
 
 
 const carouselItems = [
@@ -63,6 +59,21 @@ function PrevArrow(props)  {
 
 
 const CarouselHome = () => {
+    // const dataBase = fireData;
+    // console.log(dataBase);
+    // const carouselItemsRef = ref(dataBase, 'carouselItems');
+    // console.log(carouselItemsRef);
+    // onValue(carouselItemsRef, (snapshot) => {
+    //     const data = snapshot.val();
+    //     console.log(data);
+    // })
+
+
+
+    const carouselItemsData = usePageData('carouselItems');
+    console.log(carouselItemsData);
+
+
     const settings = {
         dots: true,
         infinite: true,
@@ -74,35 +85,15 @@ const CarouselHome = () => {
         nextArrow: <NextArrow/>
     };
 
+    if(!carouselItemsData){
+        return <div>Loading...</div>
+    }
+
     return(
         <div className={classes["carousel__wrapper"]}>
             <Slider {...settings}>
                 {
-                    carouselItems.map((item, index) => (
-                        <div className={classes["carousel__item"]} key={index}>
-                            <Container>
-                                <Row>
-                                    <Col lg='9' md='9' pl='3' >
-                                        <div className={classes["item__description"]}>
-                                            <h2 className={classes.title}>{item.title}</h2>
-                                            <p className={classes.text}>{item.text}</p>
-
-                                            <Link to='/shop'>
-                                                <motion.button whileTap={{scale: 1.1}} className='shop-btn'>
-                                                    SHOP
-                                                </motion.button>
-                                            </Link>
-
-                                        </div>
-                                    </Col>
-                                    <Col lg='3' md='3'>
-                                        <div className="item-image" >
-                                            <img src={item.image} className='img-fluid rounded' alt=""/>
-                                        </div>
-                                    </Col>
-                                </Row>
-                            </Container>
-                        </div>
+                    carouselItemsData.map((item, index) => ( <SliderItem key={item.img} id={index} {...item} />
                     ))
                 }
             </Slider>
