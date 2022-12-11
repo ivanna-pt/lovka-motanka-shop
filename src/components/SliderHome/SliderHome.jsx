@@ -3,38 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import classes from "./carousel.module.css";
-import image01 from '../../assets/images/display-images/carousel_01.png';
-import image02 from '../../assets/images/display-images/carousel_02.png';
-import image03 from '../../assets/images/display-images/carousel_03.jpg';
-import image04 from '../../assets/images/display-images/carousel_04.png';
-import usePageData from "../../custom-hooks/usePageData";
 import SliderItem from "./SliderItem";
 import {fireData} from "../../utils/firebase";
 import {onValue, ref} from "firebase/database";
-
-
-const carouselItems = [
-    {
-        title: 'Motanka Dolls',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!',
-        image: image01
-    },
-    {
-        title: 'Authentic Handcraft',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!',
-        image: image02
-    },
-    {
-        title: 'Ukrainian Souvenirs',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!',
-        image: image03
-    },
-    {
-        title: 'Perfect Gift',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!',
-        image: image04
-    },
-];
 
 function NextArrow(props)  {
     const {className, style, onClick } = props;
@@ -110,7 +81,7 @@ const CarouselHome = () => {
         <div className={classes["carousel__wrapper"]}>
             <Slider {...settings}>
                 {
-                    sliderItems.map((item, index) => ( <SliderItem key={item.img} id={index} {...item} />
+                    sliderItems.map((item, index) => ( <SliderItem key={item.img} {...item} />
                     ))
                 }
             </Slider>

@@ -7,6 +7,8 @@ import Services from "../services/Services";
 import ProductsList from "../components/UI/ProductsList";
 import products from "../assets/data/products";
 import TimerCount from "../components/TimerCount/TimerCount";
+import {onValue, ref} from "firebase/database";
+import {fireData} from "../utils/firebase";
 
 
 const Home = () => {
@@ -15,13 +17,31 @@ const Home = () => {
     const [bestSalesProducts, setBestSalesProductsData] = useState([]);
 
     useEffect(() => {
-        const filteredTrendingProducts = products.filter(item => item.category === 'ukraine').slice(0,4)
+        const query = ref(fireData, 'products')
 
-        const filteredBestSalesProducts = products.filter(item => item.avgRating > 4.7).slice(0,4)
-        // console.log(filteredBestSalesProducts)
+        // const filteredTrendingProducts = products.filter(item => item.category === 'ukraine').slice(0,4)
+        // const filteredBestSalesProducts = products.filter(item => item.avgRating > 4.7).slice(0,4)
 
-        setTrendingProductsData(filteredTrendingProducts);
-        setBestSalesProductsData(filteredBestSalesProducts)
+
+        return onValue(query, snapshot => {
+            const data = snapshot.val();
+            console.log(data);
+            const filteredTrendingProducts = data.filter(item => item.category === 'ukraine').slice(0,4);
+            console.log(filteredTrendingProducts);
+            const filteredBestSalesProducts = data.filter(item => item.avgRating > 4.7).slice(0,4)
+
+            if(snapshot.exists()){
+                Object.values(filteredTrendingProducts).map((item) =>{
+                    setTrendingProductsData((trendingProducts) => [...trendingProducts, item])
+                });
+                Object.values(filteredBestSalesProducts).map((item) => {
+                    setBestSalesProductsData((bestSalesProducts) => [...bestSalesProducts, item]);
+                });
+            }
+        })
+
+        // setTrendingProductsData(filteredTrendingProducts);
+        // setBestSalesProductsData(filteredBestSalesProducts)
     }, [])
 
     return (

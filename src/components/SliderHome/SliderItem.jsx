@@ -3,15 +3,11 @@ import classes from './carousel.module.css';
 import {Col, Container, Row} from "reactstrap";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import carousel01 from "../../assets/images/display-images/carousel_01.png";
-import carousel02 from "../../assets/images/display-images/carousel_02.png";
-import carousel03 from "../../assets/images/display-images/carousel_03.jpg";
-import carousel04 from '../../assets/images/display-images/carousel_04.png';
 import images from "../../assets/images/imageImport";
 
 
 
-const SliderItem = ({image, title, text, imageName, id} ) => {
+const SliderItem = ({image, title, text, imageName} ) => {
     // const src = require('../../assets/images/display-images/carousel_01.png');
 
     // const imageR = image;
@@ -25,8 +21,6 @@ const SliderItem = ({image, title, text, imageName, id} ) => {
     function getImageByKey(key) {
         return images[key]
     }
-
-    console.log(getImageByKey(image));
 
     return (
         <div className={classes["carousel__item"]}>
