@@ -4,6 +4,7 @@
       "id": "01",
       "productName": "Loving mother",
       "imgUrl": "images/beregynia/beregynia_01-min.png",
+      "imgName": "beregynia01",
       "category": "Beregynia",
       "price": 79,
       "shortDesc":
@@ -23,6 +24,7 @@
       "id": "02",
       "productName": "Olesya",
       "imgUrl": "images/beregynia/beregynia_02-min.jpg",
+      "imgName": "beregynia02",
       "category": "Beregynia",
       "price": 119,
       "shortDesc":
@@ -45,6 +47,7 @@
       "id": "03",
       "productName": "Grandmother and granddaughter",
       "imgUrl": "images/beregynia/beregynia_sm_03-min.jpg",
+      "imgName": "beregynia03",
       "category": "Beregynia",
       "price": 69,
       "shortDesc":
@@ -67,6 +70,7 @@
       "id": "04",
       "productName": "Loving mother",
       "imgUrl": "images/beregynia/beregynia_04-min.jpg",
+      "imgName": "beregynia04",
       "category": "Beregynia",
       "price": 159,
       "shortDesc":
@@ -90,6 +94,7 @@
       "id": "05",
       "productName": "Housewife",
       "imgUrl": "images/beregynia/beregynia_05-min.jpg",
+      "imgName": "beregynia05",
       "category": "Beregynia",
       "price": 159,
       "shortDesc":
@@ -113,6 +118,7 @@
       "id": "06",
       "productName": "Mistress Doll",
       "imgUrl": "images/beregynia/beregynia_06-min.png",
+      "imgName": "beregynia06",
       "category": "Beregynia",
       "price": 79,
       "shortDesc":
@@ -135,6 +141,7 @@
       "id": "07",
       "productName": "Hope",
       "imgUrl": "images/bride/bride_01-min.png",
+      "imgName": "bride01",
       "category": "bride",
       "price": 99,
       "shortDesc":
@@ -158,6 +165,7 @@
       "id": "08",
       "productName": "Kateryna",
       "imgUrl": "images/bride/bride_02-min.jpg",
+      "imgName": "bride02",
       "category": "bride",
       "price": 79,
       "shortDesc":
@@ -181,6 +189,7 @@
       "id": "09",
       "productName": "Ulyana",
       "imgUrl": "images/bride/bride_12-min.png",
+      "imgName": "bride12",
       "category": "bride",
       "price": 109,
       "shortDesc":
@@ -204,6 +213,7 @@
       "id": "10",
       "productName": "Love",
       "imgUrl": "images/bride/bride_11-min.png",
+      "imgName": "bride11",
       "category": "bride",
       "price": 79,
       "shortDesc":
@@ -227,6 +237,7 @@
       "id": "11",
       "productName": "Magic flower",
       "imgUrl": "images/bride/bride_05-min.png",
+      "imgName": "bride05",
       "category": "bride",
       "price": 79,
       "shortDesc":
@@ -249,6 +260,7 @@
       "id": "12",
       "productName": "Soul flower",
       "imgUrl": "images/bride/bride_06-min.png",
+      "imgName": "bride06",
       "category": "bride",
       "price": 69,
       "shortDesc":
@@ -271,6 +283,7 @@
       "id": "13",
       "productName": "Chornobaivka",
       "imgUrl": "images/bride/bride_lg_14-min.png",
+      "imgName": "bride14",
       "category": "bride",
       "price": 799,
       "shortDesc":
@@ -294,6 +307,7 @@
       "id": "14",
       "productName": "Bavovna",
       "imgUrl": "images/bride/bride_07-min.jpg",
+      "imgName": "bride07",
       "category": "bride",
       "price": 149,
       "shortDesc":
@@ -317,6 +331,7 @@
       "id": "15",
       "productName": "Kseniya",
       "imgUrl": "images/bride/bride_sm_13-min.png",
+      "imgName": "bride13",
       "category": "bride",
       "price": 69,
       "shortDesc":
@@ -340,6 +355,7 @@
       "id": "16",
       "productName": "Melania",
       "imgUrl": "images/bride/bride_08-min.jpg",
+      "imgName": "bride08",
       "category": "bride",
       "price": 89,
       "shortDesc":
@@ -363,6 +379,7 @@
       "id": "17",
       "productName": "Independent",
       "imgUrl": "images/ukraine/ukaine_01-min.jpg",
+      "imgName": "ukraine01",
       "category": "ukraine",
       "price": 99,
       "shortDesc":
@@ -386,6 +403,7 @@
       "id": "18",
       "productName": "Flourishing Ukraine",
       "imgUrl": "images/ukraine/ukaine_03-min.jpg",
+      "imgName": "ukraine03",
       "category": "ukraine",
       "price": 119,
       "shortDesc":
@@ -409,6 +427,7 @@
       "id": "19",
       "productName": "MyroSlava",
       "imgUrl": "images/ukraine/ukaine_04-min.png",
+      "imgName": "ukraine04",
       "category": "ukraine",
       "price": 109,
       "shortDesc":
@@ -432,6 +451,7 @@
       "id": "20",
       "productName": "Blooming Ukraine",
       "imgUrl": "images/ukraine/ukaine_05-min.jpg",
+      "imgName": "ukraine05",
       "category": "ukraine",
       "price": 119,
       "shortDesc":
@@ -455,6 +475,7 @@
       "id": "21",
       "productName": "Free Ukraine",
       "imgUrl": "images/ukraine/ukaine_06-min.png",
+      "imgName": "ukraine06",
       "category": "ukraine",
       "price": 99,
       "shortDesc":
@@ -478,6 +499,7 @@
       "id": "22",
       "productName": "Ukrainian Girl Doll",
       "imgUrl": "images/ukraine/ukaine_07-min.png",
+      "imgName": "ukraine07",
       "category": "ukraine",
       "price": 99,
       "shortDesc":
@@ -501,6 +523,7 @@
       "id": "23",
       "productName": "Radoslavа",
       "imgUrl": "images/ukraine/ukaine_lg_08-min.png",
+      "imgName": "ukraine08",
       "category": "ukraine",
       "price": 127,
       "shortDesc":
@@ -524,6 +547,7 @@
       "id": "24",
       "productName": "Peace and Glory",
       "imgUrl": "images/ukraine/ukaine_lg_09-min.png",
+      "imgName": "ukraine09",
       "category": "ukraine",
       "price": 99,
       "shortDesc":
@@ -573,22 +597,26 @@
     {
       "title": "Motanka Dolls",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!",
-      "image": "images/display-images/carousel_01.png"
+      "image": "images/display-images/carousel_01.png",
+      "imageName": "carousel01"
     },
     {
       "title": "Authentic Handcraft",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!",
-      "image": "images/display-images/carousel_02.png"
+      "image": "images/display-images/carousel_02.png",
+      "imageName": "carousel02"
     },
     {
       "title": "Ukrainian Souvenirs",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!",
-      "image": "images/display-images/carousel_03.png"
+      "image": "images/display-images/carousel_03.jpg",
+      "imageName": "carousel03"
     },
     {
       "title": "Perfect Gift",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cum!",
-      "image": "images/display-images/carousel_04.png"
+      "image": "images/display-images/carousel_04.png",
+      "imageName": "carousel04"
     }
   ]
 }

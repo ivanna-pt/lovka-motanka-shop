@@ -3,13 +3,30 @@ import classes from './carousel.module.css';
 import {Col, Container, Row} from "reactstrap";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
-import img from "../../assets/images/display-images/carousel_01.png";
+import carousel01 from "../../assets/images/display-images/carousel_01.png";
+import carousel02 from "../../assets/images/display-images/carousel_02.png";
+import carousel03 from "../../assets/images/display-images/carousel_03.jpg";
+import carousel04 from '../../assets/images/display-images/carousel_04.png';
+import images from "../../assets/images/imageImport";
 
 
-const SliderItem = ({image, title, text, id} ) => {
-    const src = require(`../../assets/images/display-images/carousel_02.png`);
-    console.log(src);
-    console.log(id);
+
+const SliderItem = ({image, title, text, imageName, id} ) => {
+    // const src = require('../../assets/images/display-images/carousel_01.png');
+
+    // const imageR = image;
+    // const imageUrl = '../../assets/' + imageR;
+    // const src = require(""+img04)
+    // console.log(imageUrl);
+    // const src = require(""+imageUrl);
+    // const src = `img0${id}`;
+    // console.log(src);
+
+    function getImageByKey(key) {
+        return images[key]
+    }
+
+    console.log(getImageByKey(image));
 
     return (
         <div className={classes["carousel__item"]}>
@@ -30,7 +47,7 @@ const SliderItem = ({image, title, text, id} ) => {
                     </Col>
                     <Col lg='3' md='3'>
                         <div className="item-image" >
-                            <img src={src} className='img-fluid rounded' alt={image}/>
+                            <img src={getImageByKey(imageName)} className='img-fluid rounded' alt={image}/>
                         </div>
                     </Col>
                 </Row>

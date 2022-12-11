@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component, useEffect, useState} from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -9,6 +9,8 @@ import image03 from '../../assets/images/display-images/carousel_03.jpg';
 import image04 from '../../assets/images/display-images/carousel_04.png';
 import usePageData from "../../custom-hooks/usePageData";
 import SliderItem from "./SliderItem";
+import {fireData} from "../../utils/firebase";
+import {onValue, ref} from "firebase/database";
 
 
 const carouselItems = [
@@ -60,18 +62,33 @@ function PrevArrow(props)  {
 
 const CarouselHome = () => {
     // const dataBase = fireData;
-    // console.log(dataBase);
     // const carouselItemsRef = ref(dataBase, 'carouselItems');
     // console.log(carouselItemsRef);
+    // let carouselItemsData = []
     // onValue(carouselItemsRef, (snapshot) => {
     //     const data = snapshot.val();
     //     console.log(data);
+    //     carouselItemsData = data;
     // })
 
+    // const carouselItemsData = usePageData('carouselItems');
+    // console.log(carouselItemsData);
 
+    const [sliderItems, setSliderItems] = useState([]);
 
-    const carouselItemsData = usePageData('carouselItems');
-    console.log(carouselItemsData);
+    useEffect(() =>{
+        const query = ref(fireData, 'carouselItems');
+        return onValue(query, snapshot => {
+            const data = snapshot.val();
+            console.log(data);
+
+            if(snapshot.exists()){
+                Object.values(data).map((item) =>{
+                    setSliderItems((sliderItems) =>[...sliderItems, item]);
+                })
+            }
+        })
+    }, []);
 
 
     const settings = {
@@ -85,7 +102,7 @@ const CarouselHome = () => {
         nextArrow: <NextArrow/>
     };
 
-    if(!carouselItemsData){
+    if(!sliderItems){
         return <div>Loading...</div>
     }
 
@@ -93,7 +110,7 @@ const CarouselHome = () => {
         <div className={classes["carousel__wrapper"]}>
             <Slider {...settings}>
                 {
-                    carouselItemsData.map((item, index) => ( <SliderItem key={item.img} id={index} {...item} />
+                    sliderItems.map((item, index) => ( <SliderItem key={item.img} id={index} {...item} />
                     ))
                 }
             </Slider>
