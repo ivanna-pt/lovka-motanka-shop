@@ -53,7 +53,7 @@ const Header = () => {
                                 {
                                     navLinks.map((item, index) => (
                                         <li className={classes['nav-item']} key={index}>
-                                            <NavLink to={item.path} className={(navClass)=>navClass.isActive ? classes['nav__active'] : ''}>{item.display}</NavLink>
+                                            <NavLink to={`lovka-motanka-shop/${item.path}`} className={(navClass)=>navClass.isActive ? classes['nav__active'] : ''}>{item.display}</NavLink>
                                         </li>
                                     ))
                                 }
