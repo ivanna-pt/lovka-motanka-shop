@@ -4,12 +4,27 @@ import {Col} from "reactstrap";
 import {motion} from 'framer-motion';
 import {Link} from "react-router-dom";
 import images from "../../assets/images/imageImport";
+import {useDispatch} from "react-redux";
+import {addItem} from "../../redux/features/cart/cartSlice";
 
 const ProductCard = ({item}) => {
 
+    const dispatch = useDispatch();
+
+    const addToCart = () => {
+        dispatch(addItem({
+            id: item.id,
+            productName: item.productName,
+            price: item.price,
+            image: item.imgName,
+            }));
+        alert(`product ${item.productName} added to the cart`);
+    };
+
+
     function getImageByKey(key) {
         return images[key]
-    }
+    };
 
     return (
         <Col lg='3' md='4'>
@@ -23,7 +38,7 @@ const ProductCard = ({item}) => {
                     </div>
                     <div className={classes["product__bottom"]}>
                         <span className={classes['product__price']}>${item.price}</span>
-                        <span  className={classes['add_to_cart__btn']}>
+                        <span  className={classes['add_to_cart__btn']} onClick={addToCart}>
                             Add to cart
                         </span>
                     </div>
