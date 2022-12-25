@@ -5,10 +5,7 @@ import {Container, Row, Col} from "reactstrap";
 import CarouselHome from "../components/SliderHome/SliderHome";
 import Services from "../services/Services";
 import ProductsList from "../components/UI/ProductsList";
-import products from "../assets/data/products";
 import TimerCount from "../components/TimerCount/TimerCount";
-import {onValue, ref} from "firebase/database";
-import {fireData} from "../utils/firebase";
 import {useSelector} from "react-redux";
 
 

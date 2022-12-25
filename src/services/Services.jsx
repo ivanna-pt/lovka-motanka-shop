@@ -4,13 +4,8 @@ import {motion} from 'framer-motion';
 import {Col, Container, Row} from "reactstrap";
 import {fireData} from "../utils/firebase";
 import {onValue, ref} from "firebase/database";
-import usePageData from "../custom-hooks/usePageData";
-
-// import serviceData from "../assets/data/serviceData";
 
 const Services = () => {
-
-    // const serviceData = usePageData('serviceData');
 
     const [serviceData, setServiceData] = useState([]);
 

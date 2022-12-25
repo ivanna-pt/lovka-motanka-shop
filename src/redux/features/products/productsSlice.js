@@ -22,16 +22,6 @@ export const getProductsItems = createAsyncThunk('products/getProductsItems',
                 } else {
                     console.log("No data available");
                 }})
-            // let resp = [];
-            //
-            //     await onValue(query, snapshot => {
-            //     resp = snapshot.val();
-            // })
-            // console.log(resp);
-            // console.log(name);
-            // console.log(thunkAPI);
-            // console.log(thunkAPI.getState());
-            // thunkAPI.dispatch(openModal());
         } catch (error) {
             return thunkAPI.rejectWithValue('Something went wrong')
         }
@@ -42,28 +32,6 @@ const productsSlice = createSlice({
     name: "products",
     initialState,
     reducers: {
-        getItems: (state, action) => {
-            const dbRef = ref(fireData)
-            get(child(dbRef, "products")).then((snapshot) => {
-                if (snapshot.exists()) {
-                    console.log(snapshot.val());
-                    state.productsItems = snapshot.val();
-                } else {
-                    console.log("No data available");
-                }
-            }).catch((error) => {
-                console.error(error);
-            });
-        //     let items = [];
-        //
-        //     onValue(query, snapshot => {
-        //         snapshot.forEach((data) => {
-        //             let item = data.val();
-        //             items.push(item);
-        //         })
-        //     });
-            console.log(state.productsItems)
-        },
         displayTrendingProducts: (state) => {
             state.trendingProducts = state.productsItems.filter(item => item.category === 'ukraine').slice(0,4);
         }
