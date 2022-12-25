@@ -1,0 +1,13 @@
+
+.common__section{
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.3)), url("../assets/images/background-images/bg_yarn.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.common__section h1{
+    color: #ffffff;
+    font-weight: 600;
+}
