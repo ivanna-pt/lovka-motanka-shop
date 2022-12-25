@@ -1,17 +1,25 @@
 import React from 'react';
 import classes from "../../styles/filter-widget.module.css"
 import {Col, Container, Row} from "reactstrap";
+import {useDispatch} from "react-redux";
+import {filterProducts} from "../../redux/features/products/productsSlice";
 
 function FilterWidget() {
+    const dispatch = useDispatch();
+
+    const filterItems = (e) => {
+        dispatch(filterProducts({value: e.target.value}));
+    }
+
     return (
         <section>
             <Container>
                 <Row>
                     <Col lg='3' md='3'>
                         <div className={classes['filter__widget']}>
-                            <select name="" id="">
+                            <select name="" id="" onClick={filterItems}>
                                 <option>Sort By Category</option>
-                                <option value="beregynia">Beregynia</option>
+                                <option value="Beregynia">Beregynia</option>
                                 <option value="bride">Bride</option>
                                 <option value="ukraine">Ukraine</option>
                             </select>

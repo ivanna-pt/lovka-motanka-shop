@@ -10,8 +10,9 @@ import {useSelector} from "react-redux";
 
 
 const Home = () => {
-    const trendingProducts = useSelector((store) => store.products.trendingProducts);
-    const bestProducts = useSelector((store) => store.products.bestSaleProducts);
+    const {productsItems} = useSelector((store) => store.products)
+    const trendingProducts = productsItems.filter(item => item.category === 'ukraine').slice(0,4);
+    const bestProducts = productsItems.filter(item => item.avgRating > 4.7).slice(0,4);
 
     // const [trendingProducts, setTrendingProductsData] = useState([]);
     // const [bestSalesProducts, setBestSalesProductsData] = useState([]);

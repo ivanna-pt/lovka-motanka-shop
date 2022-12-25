@@ -5,9 +5,8 @@ import {fireData} from "../../../utils/firebase";
 
 const initialState = {
     productsItems: [],
+    filteredProducts: [],
     isLoading: false,
-    bestSaleProducts: [],
-    trendingProducts: [],
 }
 
 export const getProductsItems = createAsyncThunk('products/getProductsItems',
@@ -34,6 +33,14 @@ const productsSlice = createSlice({
     reducers: {
         displayTrendingProducts: (state) => {
             state.trendingProducts = state.productsItems.filter(item => item.category === 'ukraine').slice(0,4);
+        },
+        filterProducts: (state, action) => {
+            let filterValue = action.payload.value;
+            state.filteredProducts = state.productsItems.filter((item) => item.category === filterValue);
+            console.log(filterValue);
+            console.log(state.filteredProducts);
+            filterValue = "";
+            console.log(filterValue);
         }
     },
     extraReducers: (builder) => {
@@ -44,10 +51,8 @@ const productsSlice = createSlice({
             .addCase(getProductsItems.fulfilled, (state, action) => {
                 state.isLoading = false;
                 state.productsItems = action.payload;
+                state.filteredProducts = action.payload;
                 console.log(state.productsItems);
-                state.trendingProducts = state.productsItems.filter(item => item.category === 'ukraine').slice(0,4);
-                state.bestSaleProducts = state.productsItems.filter(item => item.avgRating > 4.7).slice(0,4);
-                console.log(state.trendingProducts);
             })
             .addCase(getProductsItems.rejected, (state, action) => {
                 state.isLoading = false;
@@ -56,6 +61,6 @@ const productsSlice = createSlice({
     }
 })
 
-export const {getItems } = productsSlice.actions;
+export const {filterProducts } = productsSlice.actions;
 
 export default productsSlice.reducer;
