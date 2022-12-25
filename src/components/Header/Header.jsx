@@ -7,6 +7,7 @@ import {motion} from "framer-motion";
 
 import {Container, Row} from "reactstrap";
 import {NavLink} from "react-router-dom";
+import {useSelector} from "react-redux";
 
 const navLinks = [
     {path: 'home', display: 'Home'},
@@ -16,6 +17,7 @@ const navLinks = [
 ]
 
 const Header = () => {
+    const { totalQuantity} = useSelector((store) => store.cart);
 
     const headerRef = useRef(null);
 
@@ -67,7 +69,7 @@ const Header = () => {
                             </motion.span>
                             <motion.span whileTap={{scale: 1.2}} className={classes["cart__icon"]}>
                                 <i className="ri-shopping-cart-fill"></i>
-                                <span className={classes.badge}>1</span>
+                                <span className={classes.badge}>{totalQuantity}</span>
                             </motion.span>
                             <span>
                                 <motion.img whileTap={{scale: 1.2}} src={userImage} alt="user icon"/>
@@ -78,11 +80,7 @@ const Header = () => {
                             </span>
                             </div>
                         </div>
-
-
                     </div>
-
-
                 </Row>
             </Container>
         </header>

@@ -6,6 +6,9 @@ import {Link} from "react-router-dom";
 import images from "../../assets/images/imageImport";
 import {useDispatch} from "react-redux";
 import {addItem} from "../../redux/features/cart/cartSlice";
+import { toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ProductCard = ({item}) => {
 
@@ -18,7 +21,8 @@ const ProductCard = ({item}) => {
             price: item.price,
             image: item.imgName,
             }));
-        alert(`product ${item.productName} added to the cart`);
+
+        toast.success("Product added successfully")
     };
 
 

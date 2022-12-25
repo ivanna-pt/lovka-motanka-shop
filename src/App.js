@@ -3,6 +3,7 @@ import Layout from "./components/Layout/Layout";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {calculateTotal} from "./redux/features/cart/cartSlice";
+import {getItems, getProductsItems} from "./redux/features/products/productsSlice";
 
 function App() {
   const {cartItems} = useSelector((store) => store.cart)
@@ -10,7 +11,15 @@ function App() {
 
   useEffect(() => {
     dispatch(calculateTotal())
-  }, [cartItems])
+  }, [cartItems]);
+
+  // useEffect(() => {
+  //   dispatch(getItems())
+  // }, [])
+  //
+  useEffect(()=>{
+    dispatch(getProductsItems())
+  }, [])
 
   return <Layout/>;
 }
