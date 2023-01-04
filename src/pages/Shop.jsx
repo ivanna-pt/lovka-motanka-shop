@@ -7,7 +7,7 @@ import ProductsList from "../components/UI/ProductsList";
 import {useSelector} from "react-redux";
 
 const Shop = () => {
-    const products = useSelector((store) => store.products.productsItems)
+    const products = useSelector((store) => store.products.filteredProducts)
 
 
     const handleFilter = (e) => {

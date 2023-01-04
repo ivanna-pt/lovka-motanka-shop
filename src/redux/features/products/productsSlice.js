@@ -36,11 +36,37 @@ const productsSlice = createSlice({
         },
         filterProducts: (state, action) => {
             let filterValue = action.payload.value;
-            state.filteredProducts = state.productsItems.filter((item) => item.category === filterValue);
-            console.log(filterValue);
-            console.log(state.filteredProducts);
-            filterValue = "";
-            console.log(filterValue);
+
+            switch (filterValue) {
+                case "Beregynia":
+                    state.filteredProducts = state.productsItems.filter((item) => item.category === "Beregynia");
+                    filterValue = "";
+                    break;
+                case "bride":
+                    state.filteredProducts = state.productsItems.filter((item) => item.category === "bride");
+                    filterValue = "";
+                    break;
+                case "ukraine":
+                    state.filteredProducts = state.productsItems.filter((item) => item.category === "ukraine");
+                    filterValue = "";
+                    break;
+                case "all":
+                    state.filteredProducts = state.productsItems;
+                    filterValue = "";
+                    break;
+                default:
+                    state.filteredProducts = state.productsItems;
+            }
+
+
+            // if (filterValue != "Sort By Category" && filterValue != "") {
+            //     state.filteredProducts = state.productsItems.filter((item) => item.category === filterValue);
+            //     filterValue = "";
+            // }
+            // if (filterValue == "all"){
+            //     state.filteredProducts = state.productsItems
+            // }
+
         }
     },
     extraReducers: (builder) => {

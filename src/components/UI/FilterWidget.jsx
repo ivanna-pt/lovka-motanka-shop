@@ -22,6 +22,7 @@ function FilterWidget() {
                                 <option value="Beregynia">Beregynia</option>
                                 <option value="bride">Bride</option>
                                 <option value="ukraine">Ukraine</option>
+                                <option value="all">Show All</option>
                             </select>
                         </div>
                     </Col>
