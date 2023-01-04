@@ -31,9 +31,9 @@ const productsSlice = createSlice({
     name: "products",
     initialState,
     reducers: {
-        displayTrendingProducts: (state) => {
-            state.trendingProducts = state.productsItems.filter(item => item.category === 'ukraine').slice(0,4);
-        },
+        // displayTrendingProducts: (state) => {
+        //     state.trendingProducts = state.productsItems.filter(item => item.category === 'ukraine').slice(0,4);
+        // },
         filterProductsByCategory: (state, action) => {
             let filterValue = action.payload.value;
 
