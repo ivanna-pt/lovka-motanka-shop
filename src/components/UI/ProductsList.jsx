@@ -8,8 +8,8 @@ const ProductsList = ({data}) => {
     return (
         <Container>
             <Row>
-                {
-                    data?.map((item) => (<ProductCard item={item} key={item.imgName}/>))
+                {data.length === 0 ? (<h1 className={`pb-4 text-center`}>No products are found ...</h1>) : (data?.map((item) => (<ProductCard item={item} key={item.imgName}/>)))
+
                 }
 
             </Row>

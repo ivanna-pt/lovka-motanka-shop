@@ -2,13 +2,24 @@ import React from 'react';
 import classes from "../../styles/filter-widget.module.css"
 import {Col, Container, Row} from "reactstrap";
 import {useDispatch} from "react-redux";
-import {filterProducts} from "../../redux/features/products/productsSlice";
+import {
+    filterProductsByCategory,
+    filterProductsByPrice, searchForProduct
+} from "../../redux/features/products/productsSlice";
 
 function FilterWidget() {
     const dispatch = useDispatch();
 
     const filterItems = (e) => {
-        dispatch(filterProducts({value: e.target.value}));
+        dispatch(filterProductsByCategory({value: e.target.value}));
+    }
+
+    const filterByPrice = (e) => {
+        dispatch(filterProductsByPrice({value: e.target.value}));
+    }
+
+    const handleSearch = (e) => {
+        dispatch(searchForProduct({value: e.target.value}))
     }
 
     return (
@@ -28,7 +39,7 @@ function FilterWidget() {
                     </Col>
                     <Col lg='3' md='3'>
                         <div className={classes['filter__widget']}>
-                            <select name="" id="">
+                            <select name="" id="" onClick={filterByPrice}>
                                 <option>Sort By Price</option>
                                 <option value="ascending">Ascending</option>
                                 <option value="descending">Descending</option>
@@ -37,7 +48,7 @@ function FilterWidget() {
                     </Col>
                     <Col lg='6' md='6'>
                         <div className={classes["search__box"]}>
-                            <input type='text' placeholder='Search ...'/>
+                            <input type='text' placeholder='Search ...' onChange={handleSearch}/>
                             <span>
                                 <i className="ri-search-line"></i>
                             </span>

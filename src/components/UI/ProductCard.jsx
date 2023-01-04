@@ -38,7 +38,7 @@ const ProductCard = ({item}) => {
                 </div>
                 <div className={classes['image__content']}>
                     <div className={classes['product__name']}>
-                        <Link to={`/shop/${item.id}`}><h3>{item.productName}</h3></Link>
+                        <Link to={`/lovka-motanka-shop/shop/${item.id}`}><h3>{item.productName}</h3></Link>
                     </div>
                     <div className={classes["product__bottom"]}>
                         <span className={classes['product__price']}>${item.price}</span>

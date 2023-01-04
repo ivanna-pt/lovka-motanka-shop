@@ -34,7 +34,7 @@ const productsSlice = createSlice({
         displayTrendingProducts: (state) => {
             state.trendingProducts = state.productsItems.filter(item => item.category === 'ukraine').slice(0,4);
         },
-        filterProducts: (state, action) => {
+        filterProductsByCategory: (state, action) => {
             let filterValue = action.payload.value;
 
             switch (filterValue) {
@@ -67,6 +67,27 @@ const productsSlice = createSlice({
             //     state.filteredProducts = state.productsItems
             // }
 
+        },
+        filterProductsByPrice: (state, action) => {
+            let filterValue = action.payload.value;
+
+            if (filterValue === "ascending" ){
+
+                state.filteredProducts.sort((a, b) => {
+                    return a.price - b.price
+                });
+            } else if (filterValue === "descending"){
+                state.filteredProducts.sort((a, b) => {
+                    return b.price - a.price
+                });
+            }
+        },
+        searchForProduct: (state, action) => {
+            let searchValue = action.payload.value;
+
+            const searchedProducts = state.productsItems.filter((item) => item.productName.toLowerCase().includes(searchValue.toLowerCase()));
+            state.filteredProducts = searchedProducts;
+            console.log(state.filteredProducts)
         }
     },
     extraReducers: (builder) => {
@@ -87,6 +108,6 @@ const productsSlice = createSlice({
     }
 })
 
-export const {filterProducts } = productsSlice.actions;
+export const {filterProductsByCategory, filterProductsByPrice, searchForProduct } = productsSlice.actions;
 
 export default productsSlice.reducer;

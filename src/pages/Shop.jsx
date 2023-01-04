@@ -10,14 +10,6 @@ const Shop = () => {
     const products = useSelector((store) => store.products.filteredProducts)
 
 
-    const handleFilter = (e) => {
-        const filterValue = e.target.value;
-
-        if(filterValue){
-
-        }
-    }
-
 
     return ( <Helmet title='Shop'>
         <CommonSection title='Products' />
