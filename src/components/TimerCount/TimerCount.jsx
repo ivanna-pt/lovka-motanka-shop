@@ -16,7 +16,7 @@ const TimerCount = () => {
                                 <h3>Candles & Motanka Set</h3>
                             </div>
                             <Clock/>
-                           <Link to='/shop'> <button className='shop-btn'>Visit Store</button> </Link>
+                           <Link to='/lovka-motanka-shop/shop'> <button className='shop-btn'>Visit Store</button> </Link>
                         </div>
                     </Col>
                     <Col lg='5' md='5'>

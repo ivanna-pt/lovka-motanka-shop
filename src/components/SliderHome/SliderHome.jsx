@@ -51,7 +51,6 @@ const CarouselHome = () => {
         const query = ref(fireData, 'carouselItems');
         return onValue(query, snapshot => {
             const data = snapshot.val();
-            console.log(data);
 
             if(snapshot.exists()){
                 Object.values(data).map((item) =>{

@@ -31,7 +31,7 @@ const SliderItem = ({image, title, text, imageName} ) => {
                             <h2 className={classes.title}>{title}</h2>
                             <p className={classes.text}>{text}</p>
 
-                            <Link to='/shop'>
+                            <Link to='/lovka-motanka-shop/shop'>
                                 <motion.button whileTap={{scale: 1.1}} className='shop-btn'>
                                     SHOP
                                 </motion.button>
