@@ -1,0 +1,143 @@
+.details__section{
+
+}
+
+.product__img{
+    height: 400px;
+    width: auto;
+}
+
+.product__details .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.product__rating{
+    font-size: .9rem;
+}
+
+.product__category{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #B28564;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.product__name{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.product__price{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #181818;
+}
+
+.product__description{
+    margin-bottom: 1.5rem;
+}
+
+.product__description p{
+    color: #181818;
+}
+
+.product__description p+p {
+    margin-top: 1rem;
+}
+
+.add_to_cart__btn{
+    font-size: .8rem;
+    /*line-height: 1;*/
+    min-width: 150px;
+    border: 1px solid #B28564;
+    background-color: white;
+    text-align: center;
+    padding: 1.1rem 0.2rem;
+    font-weight: 700;
+    color: #B28564;
+    text-transform: uppercase;
+    transition: var(--transition-all);
+}
+
+.add_to_cart__btn:hover{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.tab__wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.tab__wrapper h6{
+    cursor: pointer;
+}
+
+.active__tab{
+    font-weight: 700;
+}
+
+.tab__content, .product__reviews{
+    margin: 1.5rem 0;
+}
+
+.tab__content p+p {
+    margin-top: 1rem;
+}
+
+.review__wrapper ul li span {
+    color: #B28564;
+    font-weight: 600;
+}
+
+.review__wrapper ul li p {
+    margin-top: 10px;
+}
+
+.review__form{
+    width: 70%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review__form h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.form__group{
+    margin-bottom: 30px;
+}
+
+.form__group input, textarea{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+.form__group input:focus, textarea:focus{
+    outline: none;
+}
+.stars{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 30px;
+    color: coral;
+}
+
+.stars span {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    cursor: pointer;
+}
