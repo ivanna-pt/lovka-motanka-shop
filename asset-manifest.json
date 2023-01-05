@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lovka-motanka-shop/static/css/main.29e5e432.css",
-    "main.js": "/lovka-motanka-shop/static/js/main.6ad6f755.js",
+    "main.css": "/lovka-motanka-shop/static/css/main.fc3e03fc.css",
+    "main.js": "/lovka-motanka-shop/static/js/main.4135b6b7.js",
     "static/media/bride_02-min.jpg": "/lovka-motanka-shop/static/media/bride_02-min.c81ebce0212941296326.jpg",
     "static/media/remixicon.svg?t=1590207869815": "/lovka-motanka-shop/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/offer_set.png": "/lovka-motanka-shop/static/media/offer_set.12122c83dbb51a2f3165.png",
@@ -45,11 +45,11 @@
     "static/media/slick.ttf": "/lovka-motanka-shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/lovka-motanka-shop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/lovka-motanka-shop/index.html",
-    "main.29e5e432.css.map": "/lovka-motanka-shop/static/css/main.29e5e432.css.map",
-    "main.6ad6f755.js.map": "/lovka-motanka-shop/static/js/main.6ad6f755.js.map"
+    "main.fc3e03fc.css.map": "/lovka-motanka-shop/static/css/main.fc3e03fc.css.map",
+    "main.4135b6b7.js.map": "/lovka-motanka-shop/static/js/main.4135b6b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.29e5e432.css",
-    "static/js/main.6ad6f755.js"
+    "static/css/main.fc3e03fc.css",
+    "static/js/main.4135b6b7.js"
   ]
 }
