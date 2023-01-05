@@ -141,3 +141,7 @@
     column-gap: 5px;
     cursor: pointer;
 }
+
+.related__products{
+    font-size: 1.3rem;
+}

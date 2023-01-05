@@ -8,6 +8,7 @@ import images from "../assets/images/imageImport";
 import classes from "../styles/productDetails.module.css";
 import {addItem} from "../redux/features/cart/cartSlice";
 import {toast} from "react-toastify";
+import ProductsList from "../components/UI/ProductsList";
 
 
 const ProductDetails = () => {
@@ -20,6 +21,8 @@ const ProductDetails = () => {
     const {productsItems} = useSelector(store => store.products);
     const product = productsItems.find((product) => product.id === id);
     const {productName, imgName, price, category, shortDesc, description, reviews, avgRating} = product;
+
+    const relatedProducts = productsItems.filter(item => item.category ===category).slice(0, 4);
 
     const addToCart = () => {
         dispatch(addItem({
@@ -137,7 +140,7 @@ const ProductDetails = () => {
                                                     <textarea rows={4} type="text" placeholder='Review Message'/>
                                                 </div>
 
-                                                <button type='submit' className="shop-btn">
+                                                <button type={"submit"} className="shop-btn">
                                                     Submit
                                                 </button>
                                             </form>
@@ -146,9 +149,13 @@ const ProductDetails = () => {
                                 </div>
                             )
                         }
-
-
                     </Col>
+
+                    <Col lg='12' className='mt-5'>
+                        <h2 className={classes['related__products']}>Related products</h2>
+                    </Col>
+
+                    <ProductsList data={relatedProducts}/>
                 </Row>
             </Container>
         </section>
